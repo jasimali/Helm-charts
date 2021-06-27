@@ -1,0 +1,23 @@
+# Default values for uiweb.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your templates.
+
+replicaCount: 1
+
+image:
+  repository: deekshithsn/offer
+  pullPolicy: IfNotPresent
+  # Overrides the image tag whose default is the chart appVersion.
+  tag: "latest"
+
+nameOverride: ""
+fullnameOverride: "offer"
+
+service:
+  type: ClusterIP
+  port: 1001
+
+container: 
+  port: 1001
+
+
